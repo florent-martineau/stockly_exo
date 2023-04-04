@@ -79,7 +79,7 @@ def compute_energy(number_of_intersections, shortcuts):
         visited = [False for i in range(number_of_intersections + 1)]
 
         energy_value = getMinPathSum(
-            graph, visited, [1, destination], source, destination, 0, None
+            graph, visited, [1, destination], source, destination, 1000000000, None
         )
 
         energy.append(str(energy_value))
