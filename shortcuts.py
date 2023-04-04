@@ -78,11 +78,11 @@ def compute_energy(number_of_intersections, shortcuts):
         # Keeps a check on visited and unvisited nodes
         visited = [False for i in range(number_of_intersections + 1)]
 
-        energy = getMinPathSum(
+        energy_value = getMinPathSum(
             graph, visited, [1, destination], source, destination, 0, None
         )
 
-        energy.append(energy)
+        energy.append(energy_value)
 
     print(energy.join(" "))
 
