@@ -82,9 +82,9 @@ def compute_energy(number_of_intersections, shortcuts):
             graph, visited, [1, destination], source, destination, 0, None
         )
 
-        energy.append(energy_value)
+        energy.append(str(energy_value))
 
-    print(energy.join(" "))
+    print(" ".join(energy))
 
 
 compute_energy(get_input())
