@@ -50,7 +50,7 @@ def build_graph(number_of_intersections, shortcuts):
 
     for intersection in range(1, number_of_intersections + 1):
         intersection_graph_idx = intersection - 1
-        edges = [[shortcuts[intersection_graph_idx - 1] - 1, 1]]  # shortcut
+        edges = [[shortcuts[intersection_graph_idx] - 1, 1]]  # shortcut
 
         if intersection > 1:
             # Edge to previous intersection
